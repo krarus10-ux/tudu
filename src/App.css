@@ -1,0 +1,392 @@
+<<<<<<< HEAD
+* {
+  box-sizing: border-box;
+=======
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+>>>>>>> c18e66e5a46ed205e07140c8af745f79284e678d
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+<<<<<<< HEAD
+  background: #0d0e12;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.list {
+  width: 90%;
+  max-width: 750px;
+  min-height: 500px;
+  margin: 70px auto;
+  padding: 35px;
+  border-radius: 18px;
+  background: #191b22;
+  border: 1px solid #353844;
+  box-shadow: 0 10px 35px #00000050;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.conteyner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.text {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.textPole {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  background: #0d0e12;
+  border: 1px solid #454957;
+  border-radius: 9px;
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+.textPole:focus {
+  border-color: #ff873f;
+}
+
+.textPole::placeholder {
+  color: #9296a3;
+}
+
+.btn {
+  width: 55px;
+  border: none;
+  border-radius: 9px;
+  background: #ff873f;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff9b5d;
+}
+
+.mic {
+  width: 55px;
+  border: 1px solid #454957;
+  border-radius: 9px;
+  background: #252832;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.mic:hover {
+  border-color: #ff873f;
+}
+
+.micOn {
+  background: #a8323c;
+  border-color: #d94350;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 #d9435088; }
+  70%  { box-shadow: 0 0 0 10px #d9435000; }
+  100% { box-shadow: 0 0 0 0 #d9435000; }
+}
+
+.attach {
+  width: 55px;
+  border: 1px solid #454957;
+  border-radius: 9px;
+  background: #252832;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.attach:hover {
+  border-color: #ff873f;
+}
+
+.photoPreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: -10px 0 20px;
+}
+
+.photoPreview img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 9px;
+  border: 1px solid #454957;
+}
+
+.photoPreview .delete {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+.thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+
+.tyd {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.l {
+  width: 100%;
+  max-width: 500px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  background: #252832;
+  border: 1px solid #414655;
+  border-radius: 10px;
+}
+
+.l input {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff873f;
+  cursor: pointer;
+}
+
+.zamH4 {
+  flex: 1;
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #858a97;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.edit {
+  background: #315c9b;
+}
+
+.edit:hover {
+  background: #4079c5;
+}
+
+.delete {
+  background: #a8323c;
+}
+
+.delete:hover {
+  background: #d94350;
+}
+
+.restore {
+  background: #2f7a4f;
+}
+
+.restore:hover {
+  background: #3d9c66;
+}
+
+.empty {
+  text-align: center;
+  color: #a5a9b5;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sort {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.sort button {
+  padding: 11px 18px;
+  border: 1px solid #454957;
+  border-radius: 9px;
+  background: #252832;
+  color: #d4d7df;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sort button:hover {
+  border-color: #ff873f;
+  color: white;
+}
+
+.sort button.activeSort {
+  background: #ff873f;
+  border-color: #ff873f;
+  color: white;
+}
+
+.trashBar {
+  display: flex;
+  justify-content: center;
+  margin: -10px 0 20px;
+}
+
+.clearTrash {
+  padding: 9px 16px;
+  border: 1px solid #a8323c;
+  border-radius: 9px;
+  background: transparent;
+  color: #d94350;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clearTrash:hover {
+  background: #a8323c;
+  color: white;
+}
+.thumb {
+  cursor: zoom-in;
+}
+
+.dayGroup {
+  margin-bottom: 20px;
+}
+
+.dayTitle {
+  margin: 0 auto 10px;
+  max-width: 500px;
+  color: #ff873f;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #000000d9;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #252832;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+=======
+  display: grid;
+  place-items: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #6366f1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+  background: #4f46e5;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.btn:focus-visible {
+  outline: 3px solid #a5b4fc;
+  outline-offset: 2px;
+}
+
+p {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+>>>>>>> c18e66e5a46ed205e07140c8af745f79284e678d
+}
